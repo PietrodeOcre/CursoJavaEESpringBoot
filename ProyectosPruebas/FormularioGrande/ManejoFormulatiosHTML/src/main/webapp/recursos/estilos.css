@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 mar. 2020, 19:25:50
+    Author     : pietrodeocre
+*/
+
+
+
+
+boy, .default {
+    line-height: 1.6em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    font-size: 12px;
+    color: #669;
+}
+
+.columna {
+    background: #d0dafd;
+    
+    border-right: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+#enfasis-columna {
+    margin: 45px;
+    width: 700px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#enfasis-columna caption {
+    font-size: 20px;
+}
+
+#enfasis-columna th {
+    font-size: 14px;
+    font-weight: normal;
+    padding:  12px 15px;
+    color: #039;
+}
+
+#enfasis-columna td {
+    border-top: 1px solid #e8edff;
+    padding:  10px 15px;
+    color: #669;
+}
+
+#enfasis-columna tr:hover td{
+    color: #339;
+    background: #eff2ff;
+}

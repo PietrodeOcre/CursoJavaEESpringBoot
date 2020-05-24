@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Document   : documentoJSP
+    Created on : 3 abr. 2020, 14:15:55
+    Author     : pietrodeocre
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+
+    <jsp:directive.page contentType="text/html" pageEncoding="UTF-8"/>
+
+    <!-- Uso de declaraciones para JSPX -->
+
+    <jsp:declaration>
+        private int contadorVisitas = 0;
+    </jsp:declaration>
+    
+    <html>
+        <body>
+            <h1>
+                Ejemplo de un Documento JSPX
+            </h1>
+            <!-- Ejemplo de salida de texto para JSPX -->
+            <jsp:text>Saludos desde un documento JSPX</jsp:text>
+            <br/>
+            <!-- Ejemplo de expresion para JSPX -->
+            <jsp:expression>
+                2*3
+            </jsp:expression>
+            <br/>
+            <!-- Ejemplo de Scriptlet -->
+            <jsp:scriptlet>
+                String nombreAplicacion = request.getContextPath();
+            </jsp:scriptlet>
+            Nombre de aplicación: 
+            <jsp:expression>
+                nombreAplicacion
+            </jsp:expression>
+            <br/>
+            Contador visitas: 
+            <jsp:expression>this.contadorVisitas++</jsp:expression>
+        </body>
+    </html>
+    
+</jsp:root>
